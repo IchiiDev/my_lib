@@ -13,8 +13,10 @@ NAME	=	mylib
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	gcc -c $(SRC) -I./include
+	gcc -c $(SRC) -I../../include
 	ar rc libmy.a $(OBJ)
+	cp libmy.a ../libmy.a
+	cp include/*.h ../../include
 	make clean
 
 clean:

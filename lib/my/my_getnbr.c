@@ -13,7 +13,7 @@ int my_getnbr(char const *str)
     int is_minus = 1;
     for (int i = 0; str[i] != '\0'; i++) {
         if (!IS_NBR(str[i]) && count > 0) {
-             return count * is_minus
+            return count * is_minus;
         }
         if (count > 2147483648) {
             return 0;

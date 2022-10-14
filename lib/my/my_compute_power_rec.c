@@ -5,7 +5,9 @@
 ** my_computer_power_rec function file
 */
 
+#include <stddef.h>
+
 int my_compute_power_rec(int nb, int power)
 {
-    return 0;
+    return NULL;
 }
