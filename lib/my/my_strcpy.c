@@ -7,5 +7,5 @@
 
 char *my_strcpy(char *dest, char const *src)
 {
-    return src;
+    return "test";
 }

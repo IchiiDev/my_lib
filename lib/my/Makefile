@@ -8,12 +8,11 @@
 SRC	=	*.c
 OBJ	=	$(SRC:.c=.o)
 
-NAME	=	mylib
+NAME	=	libmy
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	gcc -c $(SRC) -I../../include
 	ar rc libmy.a $(OBJ)
 	cp libmy.a ../libmy.a
 	cp include/*.h ../../include

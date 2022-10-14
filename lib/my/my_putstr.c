@@ -5,7 +5,9 @@
 ** my_putstr function file
 */
 
-void my_putstr(char const *str)
+#include "include/my.h"
+
+int my_putstr(char const *str)
 {
     int pointer = 0;
     while (str[pointer] != '\0') {
