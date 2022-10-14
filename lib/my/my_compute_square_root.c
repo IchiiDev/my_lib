@@ -5,9 +5,7 @@
 ** my_compute_square_root function file
 */
 
-#include <stddef.h>
-
 int my_compute_square_root(int nb)
 {
-    return NULL;
+    return 0;
 }

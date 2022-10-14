@@ -5,9 +5,7 @@
 ** my_str_islower function file
 */
 
-#include <stddef.h>
-
 int my_str_islower(char const *str)
 {
-    return NULL;
+    return 0;
 }

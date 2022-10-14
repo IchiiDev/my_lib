@@ -5,9 +5,7 @@
 ** my_strupcase function file
 */
 
-#include <unistd.h>
-
 char *my_strupcase(char *str)
 {
-    return NULL;
+    return str;
 }

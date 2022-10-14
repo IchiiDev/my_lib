@@ -5,9 +5,7 @@
 ** my_showstr function file
 */
 
-#include <stddef.h>
-
 int my_showstr(char const *str)
 {
-    return NULL;
+    return 0;
 }

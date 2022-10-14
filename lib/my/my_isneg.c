@@ -5,9 +5,7 @@
 ** my_isneg function file
 */
 
-#include <stddef.h>
-
 int my_isneg(int nb)
 {
-    return NULL;
+    return 0;
 }

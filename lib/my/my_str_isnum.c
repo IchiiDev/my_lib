@@ -5,9 +5,7 @@
 ** my_str_isnum function file
 */
 
-#include <stddef.h>
-
 int my_str_isnum(char const *str)
 {
-    return NULL;
+    return 0;
 }

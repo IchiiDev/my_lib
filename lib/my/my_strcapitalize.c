@@ -5,9 +5,7 @@
 ** my_strcapitalize function file
 */
 
-#include <stddef.h>
-
 char *my_strcapitalize(char *str)
 {
-    return NULL;
+    return str;
 }

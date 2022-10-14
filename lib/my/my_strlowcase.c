@@ -5,9 +5,7 @@
 ** my_strlowcase function file
 */
 
-#include <stddef.h>
-
 char *my_strlowcase(char *str)
 {
-    return NULL;
+    return str;
 }

@@ -5,7 +5,7 @@
 ** my_strdup function file
 */
 
-#include <stdlib.h>
+#include "include/my.h"
 
 char *my_strdup(char const *str)
 {

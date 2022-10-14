@@ -9,5 +9,5 @@
 
 int my_put_nbr(int nb)
 {
-    return NULL;
+    return 0;
 }

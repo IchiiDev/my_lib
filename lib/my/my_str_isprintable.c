@@ -5,9 +5,7 @@
 ** my_str_isprintable function file
 */
 
-#include <stddef.h>
-
 int my_str_isprintable(char const *str)
 {
-    return NULL;
+    return 0;
 }

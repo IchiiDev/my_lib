@@ -5,9 +5,7 @@
 ** my_revstr function file
 */
 
-#include <stddef.h>
-
 char *my_revstr(char *str)
 {
-    return NULL;
+    return str;
 }

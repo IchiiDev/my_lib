@@ -9,5 +9,5 @@
 
 int my_sort_int_array(int *tab, int size)
 {
-    return NULL;
+    return 0;
 }
