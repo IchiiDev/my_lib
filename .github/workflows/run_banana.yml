@@ -1,0 +1,23 @@
+name: coding-style-report
+on: [push]
+jobs:
+  run-banana:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get banana script
+        run: curl https://raw.githubusercontent.com/Epitech/coding-style-checker/main/coding-style.sh -o /tmp/coding-style.sh; chmod +x /tmp/coding-style.sh
+
+      - name: Run coding-style.sh
+        run: /tmp/coding-style.sh . .
+
+      - name: Display banana report
+        run: cat coding-style-report.log
+
+      - name: Report banana result
+        run: |
+          NB_ERROR=$(cat coding-style-report.log | wc -l)
+          if [ $NB_ERROR -gt 0 ]; then
+            echo "Banana found $NB_ERROR error(s)"
+            exit 1
+          fi
+          exit 0
