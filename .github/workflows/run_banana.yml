@@ -3,8 +3,10 @@ on: [push]
 jobs:
   run-banana:
     runs-on: ubuntu-latest
-    uses: actions/checkout@master
     steps:
+      - name: Checkout GH repository
+        uses: actions/checkout@master
+        
       - name: Get banana script
         run: curl https://raw.githubusercontent.com/Epitech/coding-style-checker/main/coding-style.sh -o /tmp/coding-style.sh; chmod +x /tmp/coding-style.sh
 
