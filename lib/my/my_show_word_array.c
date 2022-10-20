@@ -6,7 +6,7 @@
 */
 
 #include <stdlib.h>
-#include "include/my.h"
+#include "my.h"
 
 int get_total_size2(int size, char **array);
 int get_array_size(char **array);

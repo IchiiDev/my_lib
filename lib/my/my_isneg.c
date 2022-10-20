@@ -5,7 +5,11 @@
 ** my_isneg function file
 */
 
-int my_isneg(int nb)
+int my_isneg(int n)
 {
-    return 0;
+    if (n < 0) {
+        my_putchar(78);
+    } else {
+        my_putchar(80);
+    }
 }

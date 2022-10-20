@@ -5,9 +5,15 @@
 ** my_sort_int_array function file
 */
 
-#include <stddef.h>
+#include "my.h"
 
-int my_sort_int_array(int *tab, int size)
+int my_sort_int_array(int *array, int size)
 {
-    return 0;
+    if (size < 2) return;
+    for (int i = 0; i < size - 1; i++) {
+        if (array[i] > array[i + 1]) {
+            my_swap(&array[i], &array[i + 1]);
+        }
+    }
+    my_sort_int_array(array, size - 1);
 }
