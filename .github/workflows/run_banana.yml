@@ -11,7 +11,7 @@ jobs:
         run: /tmp/coding-style.sh . .
 
       - name: Display banana report
-        run: cat coding-style-report.log
+        run: cat coding-style-reports.log
 
       - name: Report banana result
         run: |
