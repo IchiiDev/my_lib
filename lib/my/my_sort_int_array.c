@@ -9,7 +9,7 @@
 
 int my_sort_int_array(int *array, int size)
 {
-    if (size < 2) return;
+    if (size < 2) return 0;
     for (int i = 0; i < size - 1; i++) {
         if (array[i] > array[i + 1]) {
             my_swap(&array[i], &array[i + 1]);

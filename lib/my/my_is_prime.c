@@ -5,7 +5,16 @@
 ** my_is_prime.c
 */
 
+#include "my.h"
+
 int my_is_prime(int nb)
 {
-    return 0;
+    int i = 2;
+    int is_prime = 1;
+    int root = my_compute_square_root(nb);
+    while (i < root && is_prime > 0) {
+        if (nb % i == 0) is_prime = 0;
+        i += 1;
+    }
+    return is_prime;
 }

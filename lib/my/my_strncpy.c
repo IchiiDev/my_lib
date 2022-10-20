@@ -5,7 +5,16 @@
 ** my_strncpy function file
 */
 
-char *my_strncpy(char *dest, char const *src, int n)
+#include <stdio.h>
+
+char *my_strncpy(char *dest, char const *str, int n)
 {
-    return "test";
+    int pointer = 0;
+    if (dest == NULL || str == NULL) return NULL;
+    while (str[pointer] != '\0' && pointer < n ) {
+        dest[pointer] = str[pointer];
+        pointer += 1;
+    }
+    if (str[n] == '\0') dest[pointer + 1] = '\0';
+    return dest;
 }
