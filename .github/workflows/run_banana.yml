@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Checkout GH repository
         uses: actions/checkout@master
-        
+
       - name: Get banana script
         run: curl https://raw.githubusercontent.com/Epitech/coding-style-checker/main/coding-style.sh -o /tmp/coding-style.sh; chmod +x /tmp/coding-style.sh
 
@@ -20,7 +20,9 @@ jobs:
         run: |
           NB_ERROR=$(cat coding-style-reports.log | wc -l)
           if [ $NB_ERROR -gt 0 ]; then
+            ERRORS=$(cat coding-style-reports.log);
             echo "Banana found $NB_ERROR error(s)"
+            echo "$ERRORS"
             exit 1
           fi
           exit 0
