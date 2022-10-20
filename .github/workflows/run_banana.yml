@@ -4,6 +4,10 @@ jobs:
   run-banana:
     runs-on: ubuntu-latest
     steps:
+      - name: Get tree
+        run: |
+          pwd
+          tree ../..
       - name: Get banana script
         run: curl https://raw.githubusercontent.com/Epitech/coding-style-checker/main/coding-style.sh -o /tmp/coding-style.sh; chmod +x /tmp/coding-style.sh
 
