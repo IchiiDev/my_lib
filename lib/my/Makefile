@@ -48,7 +48,7 @@ $(NAME):	$(OBJ)
 	ar rc $(NAME).a $(OBJ)
 	cp $(NAME).a ../$(NAME).a
 	mkdir -p ../../include
-	cp include/*.h ../../include
+	cp my.h ../../include
 	make clean
 
 clean:

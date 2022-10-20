@@ -5,7 +5,7 @@
 ** my_getnbr function file
 */
 
-#define IS_NBR(x) (x >= '0' && x <= '9') ? 1 : 0
+#include "include/my.h"
 
 int my_getnbr(char const *str)
 {

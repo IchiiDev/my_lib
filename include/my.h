@@ -5,8 +5,10 @@
 ** my header file
 */
 
-#ifndef MY_
-    #define MY_
+#ifndef MY_LIB
+    #define MY_LIB
+
+    #define IS_NBR(x) (x >= '0' && x <= '9') ? 1 : 0
 
 void my_putchar(char c);
 
