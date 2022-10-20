@@ -25,4 +25,5 @@ jobs:
             echo "$ERRORS"
             exit 1
           fi
+          echo "Everything is good ! Keep on coding !"
           exit 0

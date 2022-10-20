@@ -7,7 +7,8 @@
 
 #include "include/my.h"
 
-int my_getnbr(char const *str) {
+int my_getnbr(char const *str)
+{
     long count = 0;
     int is_minus = 1;
     for (int i = 0; str[i] != '\0'; i++) {
