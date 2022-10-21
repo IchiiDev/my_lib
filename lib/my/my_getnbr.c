@@ -12,6 +12,7 @@ int my_getnbr(char const *str)
     long count = 0;
     int is_minus = 1;
     for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i - 1] == '-' && count < 1) is_minus = -1;
         if ((!IS_NBR(str[i])) && count > 0) {
             return count * is_minus;
         }
@@ -19,7 +20,6 @@ int my_getnbr(char const *str)
             return 0;
         }
         if (IS_NBR(str[i])) {
-            if (str[i - 1] == '-') is_minus = -1;
             count = count * 10 + (str[i] - '0');
         }
     }
