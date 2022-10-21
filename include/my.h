@@ -10,6 +10,10 @@
 
     #define IS_NBR(x) (x >= '0' && x <= '9') ? 1 : 0
 
+    #define IS_LOWCASE(c) (c >= 'a' && c <= 'z') ? 1 : 0
+
+    #define IS_UPCASE(c) (c >= 'A' && c <= 'Z') ? 1 : 0
+
 void my_putchar(char c);
 
 char *my_strstr(char *str, char const *to_find);
