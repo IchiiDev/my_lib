@@ -74,4 +74,6 @@ char *my_show_word_array(char **array);
 
 char *my_strdup(char const *str);
 
+int my_is_alpha(char const c);
+
 #endif

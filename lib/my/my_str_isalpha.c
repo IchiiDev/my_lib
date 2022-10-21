@@ -5,7 +5,13 @@
 ** my_str_isalpha function file
 */
 
+#include "my.h"
+
 int my_str_isalpha(char const *str)
 {
-    return 0;
+    int pointer = 0;
+    while (str[pointer] != '\0') {
+        if (!my_is_alpha(str[pointer])) return 0;
+    }
+    return 1;
 }
