@@ -18,6 +18,7 @@ CPPFLAGS	= -I./include/
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
+	make -C lib/my
 	gcc -o $(NAME) $(OBJ) $(CPPFLAGS) $(LDFLAGS)
 
 clean:
