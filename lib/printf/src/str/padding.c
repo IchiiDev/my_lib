@@ -5,7 +5,7 @@
 ** padding
 */
 
-#include "lib/string.h"
+#include "my_string.h"
 
 #include "internal/str.h"
 

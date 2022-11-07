@@ -13,7 +13,7 @@ NAME	=	project
 
 LDFLAGS	=	-L./lib/ -lmy
 
-CPPFLAGS	= -I./include/
+CPPFLAGS	= -I./includes/
 
 all:	$(NAME)
 

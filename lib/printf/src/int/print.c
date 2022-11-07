@@ -8,7 +8,7 @@
 #include <stdarg.h>
 #include <stdint.h>
 
-#include "lib/string.h"
+#include "my_string.h"
 
 #include "internal/flags.h"
 #include "internal/print.h"

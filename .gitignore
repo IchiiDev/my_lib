@@ -4,3 +4,4 @@
 *.out
 *.o
 project
+compile_flags.txt

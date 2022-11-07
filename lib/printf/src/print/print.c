@@ -7,9 +7,9 @@
 
 #include <stdarg.h>
 
-#include "lib/string.h"
-#include "internal/print.h"
+#include "my_string.h"
 #include "internal/flags.h"
+#include "internal/print.h"
 
 void print_noop(t_flags flag, l_string *string, va_list *list);
 

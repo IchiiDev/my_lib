@@ -8,7 +8,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-#include "lib/string.h"
+#include "my_string.h"
 
 #include "internal/flags.h"
 #include "internal/parse.h"

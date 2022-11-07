@@ -39,7 +39,7 @@ SRC_MY =	./my/my_compute_power_rec.c \
 	./my/my_getnbr.c
 
 SRC_PRINTF	=	./printf/src/my_printf.c \
-				./printf/src/int/get_flags.c \
+				./printf/src/int/get_flag.c \
 				./printf/src/int/print.c \
 				./printf/src/int/push.c \
 				./printf/src/parse/flags.c \
@@ -54,7 +54,7 @@ SRC_STRING	=	./string/alloc.c \
 
 HEADERS	=	./includes/my.h \
 			./includes/my_printf.h \
-			./includes/string.h
+			./includes/my_string.h
 
 OBJ_MY	=	$(SRC_MY:.c=.o)
 
@@ -62,11 +62,13 @@ OBJ_PRINTF	=	$(SRC_PRINTF:.c=.o)
 
 OBJ_STRING	=	$(SRC_STRING:.c=.o)
 
+CPPFLAGS	=	-I./includes
+
 NAME	=	libmy.a
 
 all:	$(NAME)
 
-$(NAME):	$(OBJ)
+$(NAME):	$(OBJ_MY) $(OBJ_PRINTF) $(OBJ_STRING)
 	ar rc $(NAME) $(OBJ_MY) $(OBJ_PRINTF) $(OBJ_STRING)
 	mkdir -p ../includes
 	cp $(HEADERS) ../includes
